@@ -54,6 +54,7 @@ button.clear {
     background-color:#C7C7BB;
     padding:2.25rem;
     border-radius:10px;
+    margin-top:5vh;
 }
 .deleteLastValue {
     grid-column-start:1;

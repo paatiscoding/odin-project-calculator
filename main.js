@@ -19,7 +19,7 @@ function multiply(num1,num2) {
 
 function divide(num1, num2){
     if (num2 === 0) {
-        return "LOL You can't divide by 0!"
+       return "LOL you can't divide by 0";
     } else {
          return num1/num2;
     }
@@ -28,15 +28,14 @@ function divide(num1, num2){
 function operate(operation, num1,num2) {
     if (operation === '+') {
         displayValue.innerText = add(num1,num2);
-    } else if (operation === '-' ) {
+    }else if (operation === '-' ) {
         displayValue.innerText = subtract(num1,num2);
     }else if (operation === 'x' ) {
         displayValue.innerText = multiply(num1,num2);
     } else {
         displayValue.innerText = divide(num1,num2);
     }
-    
-    if (displayValue.innerText.length > 5) {
+    if (displayValue.innerText.length > 100) {
         displayValue.innerText = Math.round(parseFloat(displayValue.innerText)*10000)/10000;
     }
 }
