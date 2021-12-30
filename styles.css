@@ -17,7 +17,7 @@ main {
     display:grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(6, 1fr);
-    gap:3vh;
+    gap:1vh;
    
 }
 
@@ -43,6 +43,8 @@ button.clear {
     font-size:2rem;
     grid-column-start:1;
     grid-column-end:5;
+    /*grid-row-start:1;
+    grid-row-end:3;*/
     display:flex;
     align-items:center;
     justify-content:flex-end;

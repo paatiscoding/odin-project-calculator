@@ -43,9 +43,10 @@ function operate(operation, num1,num2) {
 
 //calculator buttons and input
 
+
 const input = document.querySelectorAll('.number');
 input.forEach(button => button.addEventListener ('click', btn => displayValue.innerText = displayValue.innerText + btn.target.innerText));
-
+ 
 const operation = document.querySelectorAll('.operator')
 operation.forEach(btn => btn.addEventListener ('click', () => {
     if (firstOperand !== '') {
